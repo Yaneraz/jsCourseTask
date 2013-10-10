@@ -3,7 +3,7 @@
 var appControllers = angular.module('myApp.controllers', []);
 
 /* Controllers */
-appControllers.controller('ContactListCtrl', ['$scope', function ContactListCtrl($scope) {
+appControllers.controller('ContactListCtrl', ['$scope', '$http', function ContactListCtrl($scope, $http) {
     $http.get('phones/phones.json').success(function(data) {
         $scope.phones = data;
     });
