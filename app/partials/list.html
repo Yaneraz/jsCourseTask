@@ -1,25 +1,22 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span2">
-            <!--Sidebar content-->
+<div class="control-group">Search: <input ng-model="query.name"></div>
+<div class="control-group">
+    <div>Groups:</div>
 
-            Search: <input ng-model="query">
+    <ul class="nav nav-pills nav-stacked">
+        <li  ng-click="group=''"><a>All contacts</a></li>
+        <li
+            ng-repeat="contact in contacts | orderBy:'group' | unique:'group'"
+            ng-click="filterByGroup(contact)">
+            <a>{{ contact.group }}</a>
+        </li>
+    </ul>
 
-        </div>
-        <div class="span10">
-            <!--Body content-->
-            <select ng-model="orderProp">
-                <option value="name">Alphabetical</option>
-                <option value="age">Newest</option>
-            </select>
-
-            <ul class="phones">
-                <li ng-repeat="phone in phones | filter:query | orderBy: orderProp">
-                    {{phone.name}}
-                    <p>{{phone.snippet}}</p>
-                </li>
-            </ul>
-
-        </div>
-    </div>
 </div>
+
+<ul class="phones">
+    <li ng-repeat="contact in contacts | filter:query:strict | filter:group" class="thumbnail phone-listing">
+        <a href="#!/Contacts/{{ contact.id }}">{{ contact.name }}</a>
+        <p>{{ contact.snippet }}</p>
+        <p>{{ contact.group }}</p>
+    </li>
+</ul>

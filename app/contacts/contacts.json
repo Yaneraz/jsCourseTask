@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "group": "group1",
+        "mainImageUrl": "img/blank-avatar.png",
+        "name": "Konstantin Konstatinopolskiy",
+        "email": "kons@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "2",
+        "group": "group1",
+        "mainImageUrl": "img/blank-avatar.png",
+        "name": "User 2",
+        "email": "kons@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "3",
+        "group": "group3",
+        "mainImageUrl": "img/blank-avatar.png",
+        "name": "User 3",
+        "email": "kons@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "4",
+        "group": "group2",
+        "mainImageUrl": "img/blank-avatar.png",
+        "name": "User 5",
+        "email": "kons@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "5",
+        "group": "group2",
+        "mainImageUrl": "img/blank-avatar.png",
+        "name": "User 5",
+        "email": "kons@noexistemail.com",
+        "phone": "+38(099)1234567"
+    }
+]

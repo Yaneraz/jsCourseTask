@@ -1647,14 +1647,14 @@ angular.module('ngMockE2E', ['ng']).config(function($provide) {
  * <pre>
  *   myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);
  *   myAppDev.run(function($httpBackend) {
- *     phones = [{name: 'phone1'}, {name: 'phone2'}];
+ *     contacts = [{name: 'phone1'}, {name: 'phone2'}];
  *
- *     // returns the current list of phones
- *     $httpBackend.whenGET('/phones').respond(phones);
+ *     // returns the current list of contacts
+ *     $httpBackend.whenGET('/contacts').respond(contacts);
  *
- *     // adds a new phone to the phones array
- *     $httpBackend.whenPOST('/phones').respond(function(method, url, data) {
- *       phones.push(angular.fromJson(data));
+ *     // adds a new phone to the contacts array
+ *     $httpBackend.whenPOST('/contacts').respond(function(method, url, data) {
+ *       contacts.push(angular.fromJson(data));
  *     });
  *     $httpBackend.whenGET(/^\/templates\//).passThrough();
  *     //...

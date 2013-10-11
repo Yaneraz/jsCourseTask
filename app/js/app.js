@@ -6,7 +6,8 @@ var app = angular.module('myApp', ['ngRoute', 'myApp.filters', 'myApp.services',
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('!');
     $routeProvider
-        .when('/List', {templateUrl: 'partials/list.html', controller: 'ContactListCtrl'})
+        //.when('/Contacts', {controller: 'ContactListCtrl'})
+        .when('/Contacts/:contactId', {templateUrl: 'partials/details.html', controller: 'ContactDetailCtrl'})
 
-        .otherwise({redirectTo: '/List'});
+        .otherwise({redirectTo: '/Contacts'});
 }]);
