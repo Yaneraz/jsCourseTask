@@ -1,4 +1,4 @@
 Address book
 ===========
 
-Task for js courses.
+Task for js courses by Roman Pavliuk.
