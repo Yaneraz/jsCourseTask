@@ -8,6 +8,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
         //.when('/Contacts', {controller: 'ContactListCtrl'})
         .when('/Contacts/:contactId', {templateUrl: 'partials/details.html', controller: 'ContactDetailCtrl'})
+        .when('/ContactsEdit/:contactId', {templateUrl: 'partials/detailsEdit.html', controller: 'ContactEditCtrl'})
 
         .otherwise({redirectTo: '/Contacts'});
 }]);

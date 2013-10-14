@@ -1,22 +1,28 @@
-<div class="control-group">Search: <input ng-model="query.name"></div>
-<div class="control-group">
-    <div>Groups:</div>
+<div class="clist">
+    <form class="form-search clist__head">
+        <input type="text" ng-model="query.name" class="search-query" placeholder="Search:"/>
+    </form>
+    <div class="control-group">
+        <div class="clist__groups">Groups:</div>
 
-    <ul class="nav nav-pills nav-stacked">
-        <li  ng-click="group=''"><a>All contacts</a></li>
-        <li
-            ng-repeat="contact in contacts | orderBy:'group' | unique:'group'"
-            ng-click="filterByGroup(contact)">
-            <a>{{ contact.group }}</a>
-        </li>
-    </ul>
+        <div class="scroll-pane">
+            <ul class="nav nav-pills nav-stacked">
+                <li ng-click="filterByGroup()"><a href="">All contacts</a></li>
+                <li ng-repeat="contact in contacts | orderBy:'group' | unique:'group'"
+                        ng-click="filterByGroup(contact)">
 
+                    <a href="">{{ contact.group }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clist__list">
+        <a href="#!/Contacts/{{ contact.id }}" ng-repeat="contact in contacts | filter:query:strict | filter:group" class="clist__item">
+            <i class="icon-user"></i>
+
+            <span class="clist__name">{{ contact.name }}</span>
+            <span class="clist__group">{{ contact.group }}</span>
+        </a>
+    </div>
 </div>
-
-<ul class="phones">
-    <li ng-repeat="contact in contacts | filter:query:strict | filter:group" class="thumbnail phone-listing">
-        <a href="#!/Contacts/{{ contact.id }}">{{ contact.name }}</a>
-        <p>{{ contact.snippet }}</p>
-        <p>{{ contact.group }}</p>
-    </li>
-</ul>

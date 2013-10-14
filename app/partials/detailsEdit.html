@@ -1,0 +1,44 @@
+<div class="contact contact_edit row-fluid">
+    <div class="contact__edit">
+        [<a href="" ng-click="removeContact(contact)" class="g-red">delete user x</a>]
+    </div>
+    <div class="contact__img pull-left">
+        <div class="upload" title="click to upload image">
+            <img ng-src="{{ contact.mainImageUrl }}" />
+            <input type="file" class="upload__input" value="" />
+        </div>
+        <a href="" class="g-red" ng-click="resetAvatar()">delete image</a>
+    </div>
+
+    <div class="contact__body">
+        <div class="row-fluid control-group">
+            <div class="contact__ttl"><input type="text" class="input" ng-model="contact.name" value=""/></div>
+        </div>
+
+        <div class="row-fluid control-group">
+            <div class="input-prepend">
+                <span class="add-on">Email</span>
+                <input class="" type="text" ng-model="contact.email">
+            </div>
+        </div>
+        <div class="row-fluid control-group">
+            <div class="input-prepend">
+                <span class="add-on">Phone</span>
+                <input class="" type="text" ng-model="contact.phone">
+            </div>
+        </div>
+
+        <div class="row-fluid control-group">
+            <div class="input-prepend">
+                <span class="add-on">Group</span>
+                <input class="" type="text" ng-model="contact.group">
+            </div>
+            <br />Leave empty to assign none.
+        </div>
+
+        <div class="contact__submit control-group">
+            <button type="submit" class="btn btn-primary" ng-click="update(contact)">Save changes</button>
+            <button type="button" class="btn"  ng-click="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>

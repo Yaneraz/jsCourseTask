@@ -4,89 +4,122 @@ body {
   padding-top: 20px;
 }
 
+.g-red { color:#c00;}
 
-.phone-images {
-  width: 450px;
-  height: 450px;
-  overflow: hidden;
-  position: relative;
-  float: left;
+/* ==== [ Contact list sidebar ] ==== */
+.clist {}
+	.clist__head {
+		padding-bottom:20px;
+		border-bottom:1px solid #ccc;
+	}
+
+	.clist__list { margin:0;}
+	.clist__item {
+		display:block;
+		padding:6px 12px 6px 32px;
+		margin-bottom:10px;
+		border:1px solid #ccc;
+		border-radius:6px;
+		-webkit-transition:all .3s ease;
+		-moz-transition:all .3s ease;
+		-ms-transition:all .3s ease;
+		-o-transition:all .3s ease;
+		transition:all .3s ease;
+	}
+	.clist__item:hover {
+		text-decoration:none;
+		background:#f8f8f8;
+	}
+	.clist__item.active { background-color:#08c;}
+
+			.clist__item .icon-user {
+				position:absolute;
+				margin:3px 0 0 -20px;
+			}
+
+	    .clist__name { display:block; }
+		.clist__group {
+		    display:block;
+		    color:#333;
+	    }
+
+/* ==== [ Single contact ] ==== */
+.contact {}
+	.contact__edit { margin-bottom:10px;}
+		 .contact__edit a { color:#333;}
+
+	.contact__img {
+		margin:0 20px 20px 0;
+	}
+    .contact__ttl {
+	    font-size:16px;
+    }
+        .contact__ttl input {
+	        font-size:16px;
+	        width:252px;
+        }
+
+    .contact__body {
+	    overflow:hidden;
+    }
+
+    .contact__submit {
+	    padding-top:10px;
+    }
+		 .contact__submit button { margin-right:10px;}
+
+/* ==== [ Dropdown box ] ==== */
+.dropdown {}
+
+/* ==== [ Upload ] ==== */
+.upload {
+	position:relative;
+	overflow:hidden;
+}
+	.upload__input {
+		font-size:199px;
+		position:absolute;
+		z-index:2;
+		top:-20px;
+		left:-5px;
+		height:100%;
+		min-height:135px;
+		width:100%;
+		opacity:0;
+		filter:alpha(opacity='0');
+		cursor:pointer;
+	}
+
+/* ==== [ Edit link ] ==== */
+.edit-link {
+	position:relative;
+	text-decoration:none;
+	padding:0 7px;
 }
 
-.phones {
-  list-style: none;
+.edit-link:hover {
+	color:#c00;
+	text-decoration:none;
 }
 
-.thumb {
-  float: left;
-  margin: -1em 1em 1.5em 0em;
-  padding-bottom: 1em;
-  height: 100px;
-  width: 100px;
-}
+	.edit-link:before,
+	.edit-link:after {
+		content:"[";
+		position:absolute;
+		top:-2px;
+		left:0;
+		-webkit-transition:all .3s ease;
+		-moz-transition:all .3s ease;
+		-ms-transition:all .3s ease;
+		-o-transition:all .3s ease;
+		transition:all .3s ease;
+		color:#333;
+	}
+	.edit-link:after {
+		content:"]";
+		left:auto;
+		right:0;
+	}
 
-.phones li {
-  clear: both;
-  height: 100px;
-  padding-top: 15px;
-}
-
-/** Detail View **/
-img.phone {
-  float: left;
-  margin-right: 3em;
-  margin-bottom: 2em;
-  background-color: white;
-  padding: 2em;
-  height: 400px;
-  width: 400px;
-}
-
-ul.phone-thumbs {
-  margin: 0;
-  list-style: none;
-}
-
-ul.phone-thumbs li {
-  border: 1px solid black;
-  display: inline-block;
-  margin: 1em;
-  background-color: white;
-}
-
-ul.phone-thumbs img {
-  height: 100px;
-  width: 100px;
-  padding: 1em;
-}
-
-ul.phone-thumbs img:hover {
-  cursor: pointer;
-}
-
-
-ul.specs {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul.specs > li{
-  display: inline-block;
-  width: 200px;
-  vertical-align: top;
-}
-
-ul.specs > li > span{
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-ul.specs dt {
-  font-weight: bold;
-}
-
-h1 {
-  border-bottom: 1px solid gray;
-}
+.edit-link:hover:before { left:-3px;}
+.edit-link:hover:after { right:-3px;}

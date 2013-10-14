@@ -1,42 +1,74 @@
 [
     {
         "id": "1",
-        "group": "group1",
-        "mainImageUrl": "img/blank-avatar.png",
+        "group": "Friends",
+        "mainImageUrl": "img/user0.jpg",
         "name": "Konstantin Konstatinopolskiy",
         "email": "kons@noexistemail.com",
         "phone": "+38(099)1234567"
     },
     {
         "id": "2",
-        "group": "group1",
-        "mainImageUrl": "img/blank-avatar.png",
-        "name": "User 2",
-        "email": "kons@noexistemail.com",
+        "group": "Friends",
+        "mainImageUrl": "img/user1.jpg",
+        "name": "Boris The Blade",
+        "email": "boris@noexistemail.com",
         "phone": "+38(099)1234567"
     },
     {
         "id": "3",
-        "group": "group3",
-        "mainImageUrl": "img/blank-avatar.png",
-        "name": "User 3",
-        "email": "kons@noexistemail.com",
+        "group": "Party",
+        "mainImageUrl": "img/user2.jpg",
+        "name": "Natasha Rostova",
+        "email": "natasha@noexistemail.com",
         "phone": "+38(099)1234567"
     },
     {
         "id": "4",
-        "group": "group2",
-        "mainImageUrl": "img/blank-avatar.png",
-        "name": "User 5",
-        "email": "kons@noexistemail.com",
+        "group": "Work",
+        "mainImageUrl": "img/user3.jpg",
+        "name": "Turkish",
+        "email": "turkish@noexistemail.com",
         "phone": "+38(099)1234567"
     },
     {
         "id": "5",
-        "group": "group2",
-        "mainImageUrl": "img/blank-avatar.png",
-        "name": "User 5",
-        "email": "kons@noexistemail.com",
+        "group": "Party",
+        "mainImageUrl": "img/user4.jpg",
+        "name": "Joan D'Ark",
+        "email": "jd@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "6",
+        "group": "Party",
+        "mainImageUrl": "img/user5.jpg",
+        "name": "Franky Four Fingers",
+        "email": "frank@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "7",
+        "group": "Friends",
+        "mainImageUrl": "img/user6.jpg",
+        "name": "Mary Jane",
+        "email": "mj@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "8",
+        "group": "Work",
+        "mainImageUrl": "img/user7.jpg",
+        "name": "Brick Top",
+        "email": "br@noexistemail.com",
+        "phone": "+38(099)1234567"
+    },
+    {
+        "id": "9",
+        "group": "Friends",
+        "mainImageUrl": "img/user8.jpg",
+        "name": "The Acid",
+        "email": "acid@noexistemail.com",
         "phone": "+38(099)1234567"
     }
 ]
